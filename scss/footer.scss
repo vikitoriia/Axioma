@@ -1,0 +1,176 @@
+.ba-footer{
+	background: #222222;
+	padding: 37px 0 42px 0;
+	position: relative;
+
+	&__logo{
+		transform: translateX(-3px);
+	}
+
+	&__contacts{
+		display: flex;
+		margin-top: 1px;
+		margin-left: 3px;
+
+		@media screen and (max-width:640px){
+			flex-direction: column;
+			text-align: right;
+			transform: translateY(-30px);
+			margin-left: 0;
+			margin-top: 0;
+		}
+
+		&-title{
+			@media screen and (max-width:640px){
+				display: none;
+			}
+			align-items: center;
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 2;
+			color: #C4C4C4;
+			margin-right: 45px;
+
+
+			&::before{
+				content: "";
+				display: inline-block;
+				width: 70px;
+				height: 1px;
+				background-color: #C4C4C4;
+				margin:0 28px 4px 0;
+
+			}
+
+			&--last{
+				margin-right: 0;
+			}
+		}
+
+		span + span{
+			margin-left: 10px;
+		}
+
+		&-method{
+			display: flex;
+			flex-direction: column;	
+		}
+
+		&-phone{
+			color: #C4C4C4;
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 2;
+			margin-top: 10px;
+
+			&:hover{
+				opacity: 0.5;
+			}
+
+			@media screen and (max-width:640px){
+				margin-top: 5px;
+
+				&::after{
+					content:"";
+					display: block;
+					height: 1px;
+					width: 70px;
+					background: #c4c4c4;
+					margin: 5px 0 0 90px;
+					text-align: right;
+				}
+			}
+		}
+
+		&-mail{
+			color: #C4C4C4;
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 2;
+
+			&--first{
+				margin-top: 10px;
+				@media screen and (max-width:640px){
+					margin-top: 5px;	
+				}
+			}
+
+			&:hover{
+				opacity: 0.5;
+			}
+
+			&--second{
+				@media screen and (max-width:640px){
+					&::after{
+						content:"";
+						display: block;
+						height: 1px;
+						width: 70px;
+						background: #c4c4c4;
+						margin: 5px 0 0 90px;
+						text-align: right;
+					}
+				}
+			}
+			
+		}
+
+		&-adress{
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 2;
+			color: #C4C4C4;
+			margin: 0;
+
+			&--first{
+				margin-top: 10px;
+			}
+
+			
+		}
+
+		&-socials{
+			margin-top: 20.5px;
+
+			@media screen and (max-width:640px){
+				margin-top: 0;
+				position: relative;
+				transform: translateY(-90px) translateX(-225px);
+			}
+
+			&--icon{
+				margin-right: 18px;
+
+				&:hover{
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+}
+
+canvas {
+	display: block;
+}
+ 
+/* ---- particles.js container ---- */ 
+#particles-js {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #222222;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}

@@ -1,0 +1,70 @@
+$medium: 640px;
+$large: 1024px;
+
+@import "normalize";
+@import "layout"; 
+@import "elements";
+@import "fonts.scss";
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	// font: ;
+	// color: ;
+}
+
+/* Layout */
+.ba-container{
+	padding-right: 10px;
+	padding-left: 10px;
+	max-width: 1160px;
+	position: relative;
+	z-index: 10;
+}
+
+h1, h2, h3, h4, h5{
+	line-height: 1;
+}
+
+// h1{
+// 	font-size: ;
+
+// 	@media screen and (min-width: $medium){
+// 		font-size: ;
+// 	}
+// }
+
+h2{
+	font-size: 40px;
+	font-family: Fira Sans;
+	font-style: normal;
+	font-weight: 500;
+	margin: 0;
+}
+
+h3{
+	font-size: 18px;
+}
+
+p{
+	font-size: 14px;
+	font-family: Fira Sans;
+	font-style: normal;
+	font-weight: normal;
+}
+
+a{
+	text-decoration: none;
+	color: #4737FF;
+	font-size: 14px;
+}
+
+@import "header.scss";
+@import "section-intro";
+@import "section-projects";
+@import "section-services";
+@import "section-stage";
+@import "footer.scss";
+@import "section-about-us";

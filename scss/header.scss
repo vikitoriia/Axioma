@@ -1,0 +1,138 @@
+.ba-header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 11;
+
+	&__bar{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo img{
+		padding-top: 23px;
+		display: block;
+
+		@media screen and (min-width:640px){
+			padding-top: 50px;
+			
+		}
+	}
+
+	&-social{
+		padding-top: 57px;
+		position: absolute;
+		right: 0;
+		margin-right: 11px;
+		display: none;
+
+		@media screen and (min-width:640px){
+			padding-top: 57px;
+			position: absolute;
+			right: 0;
+			margin-right: 11px;
+			display: inline-block;
+		}
+
+		a + a{
+			margin-left: 24px;
+		}
+
+		a:nth-child(2){
+			margin-left: 22px;
+		}
+
+		&__phone{
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 1.2;
+			letter-spacing: 0.2em;
+		}
+	}
+
+	&__bar {
+		position: relative;
+	}
+
+	&__menu {
+		&-hamburger {
+			margin-top: 10px;
+			@media (min-width: 640px) {
+				display: inline-block;
+				background: none;
+				border: none;
+				cursor: pointer;
+				box-shadow: none;
+				position: absolute;
+				top: 330px;
+				right: -113px; 
+				height: 160px;
+				width: 52px;
+				background-color: #4737FF;
+			}
+	
+			img{
+				@media screen and (max-width:640px){
+					display: none;
+				}
+			}
+
+			&-inner{
+				transform: translateY(-5px);
+				display: inline-block;
+				width: 25px;
+				height: 2px;
+				background-color: #4737FF;
+				
+				&::before, 
+				&::after{
+					content: "";
+					display: block;
+					width: 25px;
+					height: 2px;
+					background-color: #4737FF;
+					position: absolute;
+				}
+
+				&::before{
+					margin: 7px 0 0 0;
+				}
+
+				&::after{
+					margin: 14px 0 0 0;
+				}
+
+				@media screen and (min-width:640px){
+					transform: translateY(-5px);
+					display: inline-block;
+					width: 30px;
+					height: 1px;
+					background-color: #fff;
+
+					&::before, 
+					&::after{
+						content: "";
+						display: block;
+						width: 30px;
+						height: 1px;
+						background-color: #fff;
+						position: absolute;
+					}
+	
+					&::before{
+						margin: 7px 0 0 0;
+					}
+	
+					&::after{
+						margin: 14px 0 0 0;
+					}
+
+				}
+			}
+		}		
+	}
+}
