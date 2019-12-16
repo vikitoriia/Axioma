@@ -32,11 +32,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 22px;
- 
+		box-shadow:  0 0 20px rgba(0, 0, 0, 0.25);
+
 		&-img{
-			max-width: 50%;
+			max-width: 100%;
+			display: block;
 			@media screen and (min-width:640px){
-				max-width: 25%;
+				max-width: 100%;
 			}
 		}
 
@@ -63,6 +65,69 @@
 					height: 8px;
 					width: 14px;
 				}
+			}
+		}
+	}
+
+	&__post{
+		display: block;
+		position: relative;
+		width: 50%;
+
+
+
+		@media screen and (min-width:640px){
+			width: 25%;	
+			&:hover{
+				.ba-section-projects__post-description{
+					display: block;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 18px;
+
+					&::before{
+						content: "";
+						display: block;
+						background: url(../img/project-gallert-hover.svg) 50% no-repeat;
+						width: 25px;
+						height: 25px;
+						position: absolute;
+						top: 15px;
+						left: 15px;
+					}
+
+					&::after{
+						content: "";
+						display: block;
+						background: url(../img/project-gallert-hover.svg) 50% no-repeat;
+						transform: rotate(-180deg);
+						width: 25px;
+						height: 25px;
+						position: absolute;
+						bottom: 15px;
+						right: 15px;
+					}
+				}
+			}	
+		}
+
+		&-description{
+			position: absolute;
+			bottom: 0;
+			color: #F4F4F4;
+			background: rgba(34, 34, 34, 0.7);
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 3;
+			width: 100%;
+			text-align: center;
+
+			@media screen and (min-width:640px){
+				display: none;
 			}
 		}
 	}

@@ -12,29 +12,24 @@ html{
 
 body{
 	// font: ;
-	// color: ;
+	color: #222222;
 }
 
 /* Layout */
 .ba-container{
 	padding-right: 10px;
 	padding-left: 10px;
-	max-width: 1160px;
-	position: relative;
-	z-index: 10;
+	max-width: 1160px; 
+
+	&--footer{
+		position: relative;
+		z-index: 10;
+	}
 }
 
 h1, h2, h3, h4, h5{
 	line-height: 1;
 }
-
-// h1{
-// 	font-size: ;
-
-// 	@media screen and (min-width: $medium){
-// 		font-size: ;
-// 	}
-// }
 
 h2{
 	font-size: 40px;
@@ -68,3 +63,5 @@ a{
 @import "section-stage";
 @import "footer.scss";
 @import "section-about-us";
+@import "section-gallery";
+@import "section-contacts";

@@ -1,0 +1,16 @@
+.ba-section-gallert__links {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+  color: #4737FF; }
+  .ba-section-gallert__links--second::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 1px;
+    background-color: #4737FF;
+    margin: 2px 4px 4px 0; }
+
+/*# sourceMappingURL=_section-gallery.css.map */
