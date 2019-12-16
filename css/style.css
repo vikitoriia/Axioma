@@ -762,7 +762,6 @@ a {
         z-index: 10;
         margin-right: 6px; } }
     .ba-header .nav__trigger svg {
-      margin-top: 10px;
       margin-bottom: 16px;
       margin-left: 8px; }
       @media screen and (max-width: 640px) {
