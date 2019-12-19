@@ -157,11 +157,13 @@
 		<!-- particles.js container -->
 		<div id="particles-js"></div>
 
-		<div class="ba-container">
+		<div class="ba-container ba-container--footer">
 			<div class="ba-row">
 				<div class="ba-col-large-3 ba-col-small-6">
 					<div class="ba-footer__logo">
-						<img src="img/footer-logo.svg" alt="Logo-Axioma">
+						<a href="#">
+							<img src="img/footer-logo.svg" alt="Logo-Axioma">
+						</a>
 					</div>
 				</div>
 
@@ -178,18 +180,18 @@
 							<a href="mailto:axioma@gmail.com" class="ba-footer__contacts-mail ba-footer__contacts-mail--first">
 								axioma@gmail.com
 							</a>
-							<a href="mailto:design@gmail.com" class="ba-footer__contacts-mail">
+							<a href="mailto:design@gmail.com"
+								class="ba-footer__contacts-mail ba-footer__contacts-mail--second">
 								design@gmail.com
 							</a>
 						</div>
 						<div class="ba-footer__contacts-method">
 							<span class="ba-footer__contacts-title">приезжайте</span>
-							<p class="ba-footer__contacts-adress ba-footer__contacts-adress--first">Украина, г.
-								Полтава</p>
+							<p class="ba-footer__contacts-adress ba-footer__contacts-adress--first">Украина, г. Полтава</p>
 							<p class="ba-footer__contacts-adress ">ул. Европейская 48/57</p>
 						</div>
 						<div class="ba-footer__contacts-method">
-							<span class="ba-footer__contacts-title">следите за нами</span>
+							<span class="ba-footer__contacts-title ba-footer__contacts-title--last">следите за нами</span>
 							<div class="ba-footer__contacts-socials">
 								<a href="" class="ba-footer__contacts-socials--icon">
 									<img src="img/footer-twitter.svg" alt="twitter">
@@ -212,17 +214,12 @@
 		</div>
 	</footer>
 
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/footer.js"></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/menu.js"></script>
-	<script>
-		$(function () {
-			$("#accordion").accordion();
-		});
-	</script>
 </body>
 
 </html>

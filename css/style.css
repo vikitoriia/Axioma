@@ -682,7 +682,7 @@ a {
     display: none; }
     @media screen and (min-width: 640px) {
       .ba-header-social {
-        padding-top: 57px;
+        padding-top: 50px;
         position: absolute;
         right: 0;
         margin-right: 11px;
@@ -950,7 +950,6 @@ a {
   .ba-header .nav__item {
     overflow: hidden; }
     .ba-header .nav__item a {
-      display: inline-block;
       color: #F4F4F4;
       text-decoration: none;
       font-family: Fira Sans;
@@ -972,7 +971,7 @@ a {
         width: 221px;
         height: 1px;
         background-color: #f4f4f4;
-        margin: 10px auto; }
+        margin: 10px 0; }
       .ba-header .nav__item a:hover {
         letter-spacing: 10px; }
   .ba-header .nav__divider {
@@ -1338,14 +1337,14 @@ a {
     position: relative; }
     .ba-section-services__offer-first {
       height: 100%;
-      margin-bottom: 20px; }
+      margin-bottom: 26px; }
       @media screen and (min-width: 640px) {
         .ba-section-services__offer-first {
           height: 268px;
           margin-bottom: 62px; } }
     .ba-section-services__offer-second {
       height: 100%;
-      margin-bottom: 20px; }
+      margin-bottom: 26px; }
       @media screen and (min-width: 640px) {
         .ba-section-services__offer-second {
           height: 237px; } }
@@ -1364,7 +1363,15 @@ a {
           background: url(../img/all-projects-img.svg) 50% 100% no-repeat;
           height: 32px;
           width: 25px; } }
+      @media screen and (max-width: 640px) {
+        .ba-section-services__offer-title--active::before {
+          content: "";
+          display: inline-block;
+          background: url(../img/all-projects-img--active.svg) 50% 100% no-repeat;
+          height: 32px;
+          width: 25px; } }
     .ba-section-services__offer-subtitle {
+      display: block;
       font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
@@ -1372,10 +1379,13 @@ a {
       line-height: 2;
       color: #222222;
       margin: 0;
-      margin-top: 4px; }
-      @media screen and (max-width: 640px) {
+      margin-top: 16px;
+      margin-left: 26px; }
+      @media screen and (min-width: 640px) {
         .ba-section-services__offer-subtitle {
-          display: none; } }
+          display: block !important;
+          margin-top: 4px;
+          margin-left: 0; } }
     .ba-section-services__offer-price {
       font-family: Fira Sans;
       font-style: normal;
@@ -1384,7 +1394,12 @@ a {
       line-height: 1.6;
       color: #4737ff;
       position: absolute;
-      bottom: 0; }
+      bottom: -10px;
+      left: 26px; }
+      @media screen and (min-width: 640px) {
+        .ba-section-services__offer-price {
+          bottom: 0;
+          left: 0; } }
   .ba-section-services .ba-slider-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2045,7 +2060,7 @@ canvas {
   padding: 70px 0 54px 0; }
   @media screen and (min-width: 640px) {
     .ba-section-contacts {
-      padding: 103px 0 84px 0; } }
+      padding: 103px 0 91px 0; } }
   .ba-section-contacts__title {
     font-family: Fira Sans;
     font-style: normal;
@@ -2071,12 +2086,23 @@ canvas {
       .ba-section-contacts__subtitle {
         margin-top: 54px;
         margin-bottom: 44px; } }
+  .ba-section-contacts .ba-contacts-input {
+    position: relative; }
+    .ba-section-contacts .ba-contacts-input svg {
+      position: absolute;
+      bottom: 50%;
+      left: 5px;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      z-index: 3; }
   .ba-section-contacts input {
     font-family: Fira Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 2;
+    width: 263px;
     position: relative;
     display: block;
     border: none;
@@ -2084,13 +2110,24 @@ canvas {
     border-radius: 0;
     background: none;
     color: #3747FF;
-    padding: 8px 82px 8px 35px; }
+    padding: 8px 0 8px 32px;
+    margin-bottom: 10px; }
+    .ba-section-contacts input::-webkit-input-placeholder {
+      color: #3747FF; }
+    .ba-section-contacts input:-ms-input-placeholder {
+      color: #3747FF; }
+    .ba-section-contacts input::-ms-input-placeholder {
+      color: #3747FF; }
+    .ba-section-contacts input::placeholder {
+      color: #3747FF; }
+    .ba-section-contacts input:focus, .ba-section-contacts input:active {
+      outline: none; }
+    .ba-section-contacts input:focus {
+      color: #000; }
+    .ba-section-contacts input:invalid {
+      color: red; }
   .ba-section-contacts input[type="tel"] {
     margin-bottom: 44px; }
-  .ba-section-contacts input[type="text"] {
-    margin-bottom: 10px; }
-  .ba-section-contacts input + input {
-    margin-bottom: 10px; }
   .ba-section-contacts button {
     font-family: Fira Sans;
     font-style: normal;
@@ -2100,7 +2137,6 @@ canvas {
     text-align: center;
     background: none;
     background: url(../img/check.svg) 60% 45% no-repeat;
-    border: none;
     color: #4737FF;
     border: 1px solid #4737FF;
     padding: 12px 122px;
@@ -2109,6 +2145,18 @@ canvas {
     @media screen and (min-width: 640px) {
       .ba-section-contacts button {
         margin-bottom: 0; } }
+    .ba-section-contacts button:hover {
+      border: none;
+      padding: 12px 122px 0 122px;
+      background: url(../img/check.svg) 60% 30% no-repeat; }
+      .ba-section-contacts button:hover::after {
+        content: "";
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: #3747FF;
+        margin: 0;
+        margin-top: 12px; }
   .ba-section-contacts__img {
     display: none;
     margin-top: 25px;

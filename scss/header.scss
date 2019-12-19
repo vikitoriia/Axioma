@@ -8,7 +8,6 @@
 	&__bar{
 		display: flex;
 		justify-content: space-between;
-		// align-items: center;
 		position: relative;
 	}
 
@@ -30,7 +29,7 @@
 		display: none;
 
 		@media screen and (min-width:640px){
-			padding-top: 57px;
+			padding-top: 50px;
 			position: absolute;
 			right: 0;
 			margin-right: 11px;
@@ -224,7 +223,7 @@
 
 
 			svg{
-				margin-top: 0;
+				margin-top: 0; 
 				path{
 					fill: #4737FF;
 				}
@@ -321,9 +320,8 @@
   
    .nav__item {
 		overflow: hidden;
-		
+	
 		a {
-			display: inline-block;
 			// padding: 0px 0 0 37px;
 			color: #F4F4F4;
 			text-decoration: none;
@@ -343,7 +341,7 @@
 				width: 221px;
 				height: 1px;
 				background-color: #f4f4f4;
-				margin: 10px auto;
+				margin: 10px 0;
 			}
   
 			&:hover {

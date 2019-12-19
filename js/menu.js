@@ -59,5 +59,3 @@ var navigation = {
 }
 
 navigation.init();
-
-

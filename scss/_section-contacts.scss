@@ -3,7 +3,7 @@
 	padding: 70px 0 54px 0;
 
 	@media screen and (min-width:640px){
-		padding: 103px 0 84px 0;
+		padding: 103px 0 91px 0;
 	}
 
 	&__title{
@@ -37,12 +37,25 @@
 		}
 	}
 
+	.ba-contacts-input{
+		position: relative;
+
+		svg{
+			position: absolute;
+			bottom: 50%;
+    		left: 5px;
+			 transform: translateY(50%);
+			 z-index: 3;
+		}
+	}
+
 	input{
 		font-family: Fira Sans;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 14px;
 		line-height: 2;
+		width: 263px;
 		position: relative;
 		display: block;
 		border: none;
@@ -50,19 +63,29 @@
 		border-radius: 0;
 		background: none;
 		color: #3747FF;
-		padding: 8px 82px 8px 35px;
+		padding: 8px 0 8px 32px;
+		margin-bottom: 10px;
+
+		&::placeholder{
+			color: #3747FF;
+		}
+
+		&:focus,
+		&:active{
+			outline: none; 
+		}
+
+		&:focus{
+			color: #000;
+		}
+
+		&:invalid{
+			color: red;
+		}
 	}
 
 	input[type="tel"]{
 		margin-bottom: 44px;
-	}
-
-	input[type="text"]{
-		margin-bottom: 10px;
-	}
-
-	input + input{
-		margin-bottom: 10px;
 	}
 
 	button{
@@ -74,7 +97,6 @@
 		text-align: center;
 		background: none;
 		background: url(../img/check.svg) 60% 45% no-repeat;
-		border: none;
 		color: #4737FF;
 		border: 1px solid #4737FF;
 		padding: 12px 122px;
@@ -83,6 +105,22 @@
 
 		@media screen and (min-width:640px){
 			margin-bottom: 0;
+		}
+
+		&:hover{
+			border: none;
+			padding: 12px 122px 0 122px;
+			background: url(../img/check.svg) 60% 30% no-repeat;
+
+			&::after{
+				content: "";
+				display: block;
+				width: 35px;
+				height: 2px;
+				background-color: #3747FF;
+				margin: 0;
+				margin-top: 12px; 
+			}
 		}
 	}
 
