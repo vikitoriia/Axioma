@@ -3,10 +3,8 @@
 	padding: 6px 0 15px 0;
 
 	&__title{
-		color: #222222;
 		text-align: right;
 		margin-bottom: 7px;
-		font-family: Fira Sans;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 1.25;
@@ -43,12 +41,10 @@
 		}
 
 		&-link{
-			font-family: Fira Sans;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 18px;
 			line-height: 1.6;
-			color: #222222;
 			opacity: 0.7;
 
 			@media screen and (max-width:640px){
@@ -118,7 +114,6 @@
 			bottom: 0;
 			color: #F4F4F4;
 			background: rgba(34, 34, 34, 0.7);
-			font-family: Fira Sans;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 13px;
@@ -145,11 +140,9 @@
 		&::before{
 			content: "01";
 			font-size: 18px;
-			font-family: Fira Sans;
 			font-style: normal;
 			font-weight: normal;
 			line-height: 1.6;
-			color: #222222;
 			margin-right: 14px;
 			margin-left: 2px;
 		}
@@ -157,11 +150,9 @@
 		&::after{
 			content: "04";
 			font-size: 18px;
-			font-family: Fira Sans;
 			font-style: normal;
 			font-weight: normal;
 			line-height: 1.6;
-			color: #222222;
 			margin-right: 3px;
 		}
 		

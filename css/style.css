@@ -618,6 +618,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  font-family: Fira Sans;
   color: #222222; }
 
 /* Layout */
@@ -692,7 +693,6 @@ a {
     .ba-header-social a:nth-child(2) {
       margin-left: 22px; }
     .ba-header-social__phone {
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -952,7 +952,6 @@ a {
     .ba-header .nav__item a {
       color: #F4F4F4;
       text-decoration: none;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
@@ -997,7 +996,6 @@ a {
     .ba-section-intro {
       padding: 171px 0 7px 0; } }
   .ba-section-intro__title {
-    color: #222222;
     line-height: 1.25;
     z-index: 1; }
     @media screen and (max-width: 640px) {
@@ -1009,7 +1007,6 @@ a {
     margin: 0;
     margin-bottom: 44px;
     margin-top: 460px;
-    color: #222222;
     opacity: 0.7;
     max-width: 459px;
     font-size: 18px;
@@ -1019,7 +1016,6 @@ a {
         margin-top: 12px; } }
   .ba-section-intro__button {
     font-size: 14px;
-    font-family: Fira Sans;
     font-style: normal;
     font-weight: 500;
     line-height: 0.7;
@@ -1070,18 +1066,51 @@ a {
         margin: 0;
         -webkit-box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.25);
         box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.25); } }
-  .ba-section-intro video {
+  .ba-section-intro__video video {
     display: none; }
     @media screen and (min-width: 640px) {
-      .ba-section-intro video {
+      .ba-section-intro__video video {
         display: block;
         width: 400px;
-        height: 310px;
+        height: 226px;
         -webkit-box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.4);
         box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.4);
         position: absolute;
         left: 571px;
         top: 332px; } }
+  .ba-section-intro__video-play {
+    display: none; }
+    @media screen and (min-width: 640px) {
+      .ba-section-intro__video-play {
+        display: block;
+        position: absolute;
+        top: 425px;
+        left: 754px;
+        z-index: 3;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
+        .ba-section-intro__video-play:hover {
+          top: 430px; }
+        .ba-section-intro__video-play svg:hover {
+          height: 40px;
+          width: 40px; } }
+  .ba-section-intro__video-pause {
+    display: none; }
+    @media screen and (min-width: 640px) {
+      .ba-section-intro__video-pause {
+        width: 46px;
+        height: 52px;
+        display: block;
+        position: absolute;
+        top: 425px;
+        left: 754px;
+        z-index: 3; }
+        .ba-section-intro__video-pause svg path {
+          fill: #4737ff; } }
+  .ba-section-intro__video button {
+    background: none;
+    border: none; }
   .ba-section-intro__line {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1112,7 +1141,6 @@ a {
     font-style: normal;
     font-weight: normal;
     line-height: 1.6;
-    color: #222222;
     margin-right: 14px;
     margin-left: 1px; }
   .ba-slider-nav::after {
@@ -1122,7 +1150,6 @@ a {
     font-style: normal;
     font-weight: normal;
     line-height: 1.6;
-    color: #222222;
     margin-left: 12px; }
   .ba-slider-nav__list {
     list-style: none;
@@ -1151,10 +1178,8 @@ a {
   background-color: #E5E5E5;
   padding: 6px 0 15px 0; }
   .ba-section-projects__title {
-    color: #222222;
     text-align: right;
     margin-bottom: 7px;
-    font-family: Fira Sans;
     font-style: normal;
     font-weight: 500;
     line-height: 1.25; }
@@ -1187,12 +1212,10 @@ a {
         .ba-section-projects__gallery-img {
           max-width: 100%; } }
     .ba-section-projects__gallery-link {
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
       line-height: 1.6;
-      color: #222222;
       opacity: 0.7; }
       @media screen and (max-width: 640px) {
         .ba-section-projects__gallery-link {
@@ -1253,7 +1276,6 @@ a {
       bottom: 0;
       color: #F4F4F4;
       background: rgba(34, 34, 34, 0.7);
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 13px;
@@ -1280,21 +1302,17 @@ a {
     .ba-section-projects .ba-slider-nav::before {
       content: "01";
       font-size: 18px;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       line-height: 1.6;
-      color: #222222;
       margin-right: 14px;
       margin-left: 2px; }
     .ba-section-projects .ba-slider-nav::after {
       content: "04";
       font-size: 18px;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       line-height: 1.6;
-      color: #222222;
       margin-right: 3px; }
     .ba-section-projects .ba-slider-nav__list {
       list-style: none;
@@ -1318,7 +1336,6 @@ a {
     .ba-section-services {
       background: #E5E5E5 url(../img/services-bg.svg) 50% 50% no-repeat; } }
   .ba-section-services__title {
-    font-family: Fira Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -1349,12 +1366,10 @@ a {
         .ba-section-services__offer-second {
           height: 237px; } }
     .ba-section-services__offer-title {
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       line-height: 1.6;
-      color: #222222;
       margin: 0; }
       @media screen and (max-width: 640px) {
         .ba-section-services__offer-title::before {
@@ -1372,12 +1387,10 @@ a {
           width: 25px; } }
     .ba-section-services__offer-subtitle {
       display: block;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
       line-height: 2;
-      color: #222222;
       margin: 0;
       margin-top: 16px;
       margin-left: 26px; }
@@ -1387,7 +1400,6 @@ a {
           margin-top: 4px;
           margin-left: 0; } }
     .ba-section-services__offer-price {
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -1415,21 +1427,17 @@ a {
     .ba-section-services .ba-slider-nav::before {
       content: "01";
       font-size: 18px;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       line-height: 1.6;
-      color: #222222;
       margin-right: 14px;
       margin-left: 2px; }
     .ba-section-services .ba-slider-nav::after {
       content: "04";
       font-size: 18px;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       line-height: 1.6;
-      color: #222222;
       margin-left: 12px; }
     .ba-section-services .ba-slider-nav__list {
       list-style: none;
@@ -1453,12 +1461,10 @@ a {
     .ba-section-stage {
       padding: 27px 0 4px 0; } }
   .ba-section-stage__title {
-    font-family: Fira Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.25;
-    color: #222222;
     text-align: right;
     margin-right: 3px; }
     .ba-section-stage__title::before {
@@ -1472,12 +1478,10 @@ a {
     .ba-section-stage__title-description {
       text-align: right;
       margin: 0;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
       line-height: 1.6;
-      color: #222222;
       opacity: 0.7;
       margin-right: 3px;
       margin-top: 2px;
@@ -1520,7 +1524,6 @@ a {
         padding: 110px 20px;
         background-color: rgba(34, 34, 34, 0.7); }
       .ba-section-stage__gallery--post-number {
-        font-family: Fira Sans;
         font-style: normal;
         font-weight: bold;
         font-size: 64px;
@@ -1530,7 +1533,6 @@ a {
         top: 53px;
         left: 30px; }
       .ba-section-stage__gallery--post-description {
-        font-family: Fira Sans;
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -1545,7 +1547,6 @@ a {
         margin-top: 25px; }
       .ba-section-stage__gallery--post-subtitle {
         display: none;
-        font-family: Fira Sans;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -1569,21 +1570,17 @@ a {
     .ba-section-stage .ba-slider-nav::before {
       content: "01";
       font-size: 18px;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       line-height: 1.6;
-      color: #222222;
       margin-right: 14px;
       margin-left: 2px; }
     .ba-section-stage .ba-slider-nav::after {
       content: "04";
       font-size: 18px;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       line-height: 1.6;
-      color: #222222;
       margin-left: 12px; }
     .ba-section-stage .ba-slider-nav__list {
       list-style: none;
@@ -1615,7 +1612,6 @@ a {
         display: inline-block;
         position: relative; } }
     .ba-section-stage__button-scroll {
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -1667,7 +1663,6 @@ a {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -1698,7 +1693,6 @@ a {
       flex-direction: column; }
     .ba-footer__contacts-phone {
       color: #C4C4C4;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -1719,7 +1713,6 @@ a {
             text-align: right; } }
     .ba-footer__contacts-mail {
       color: #C4C4C4;
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -1741,7 +1734,6 @@ a {
           margin: 5px 0 0 90px;
           text-align: right; } }
     .ba-footer__contacts-adress {
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -1788,7 +1780,6 @@ canvas {
     .ba-section-about {
       padding: 103px 0 89px 0; } }
   .ba-section-about__links {
-    font-family: Fira Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1805,18 +1796,15 @@ canvas {
       margin: 2px 4px 4px 0; }
   .ba-section-about__title {
     line-height: 1.25;
-    color: #222222;
     margin-top: 2px; }
     @media screen and (min-width: 640px) {
       .ba-section-about__title {
         margin-bottom: 10px; } }
   .ba-section-about__subtitle {
-    font-family: Fira Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 1.6;
-    color: #222222;
     opacity: 0.7;
     width: 349px;
     margin: 0;
@@ -1838,7 +1826,6 @@ canvas {
         margin-bottom: 58px;
         margin-top: 139px; } }
     .ba-section-about__scope-title {
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -1903,19 +1890,15 @@ canvas {
       margin-top: 24px;
       margin-bottom: 28px; }
     .ba-section-about__post-title {
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
-      line-height: 1.6;
-      color: #222222; }
+      line-height: 1.6; }
     .ba-section-about__post-subtitle {
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
       line-height: 2;
-      color: #222222;
       margin: 0;
       margin-top: 31px; }
   .ba-section-about__gallery {
@@ -1933,7 +1916,6 @@ canvas {
           top: 167px;
           right: 56px; } }
     .ba-section-about__gallery-title {
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: 500;
       font-size: 40px;
@@ -1956,7 +1938,6 @@ canvas {
     .ba-section-gallery {
       padding: 103px 0 73px 0; } }
   .ba-section-gallery__links {
-    font-family: Fira Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1993,7 +1974,6 @@ canvas {
       .ba-section-gallery__button {
         margin-top: 58px; } }
     .ba-section-gallery__button-scroll {
-      font-family: Fira Sans;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -2025,7 +2005,6 @@ canvas {
         text-align: right; }
       @media screen and (min-width: 640px) {
         .ba-section-gallery__button-scroll {
-          font-family: Fira Sans;
           font-style: normal;
           font-weight: 500;
           font-size: 14px;
@@ -2062,7 +2041,6 @@ canvas {
     .ba-section-contacts {
       padding: 103px 0 91px 0; } }
   .ba-section-contacts__title {
-    font-family: Fira Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -2073,7 +2051,6 @@ canvas {
         margin-top: 57px;
         margin-left: 2px; } }
   .ba-section-contacts__subtitle {
-    font-family: Fira Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2097,7 +2074,6 @@ canvas {
       transform: translateY(50%);
       z-index: 3; }
   .ba-section-contacts input {
-    font-family: Fira Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2129,7 +2105,6 @@ canvas {
   .ba-section-contacts input[type="tel"] {
     margin-bottom: 44px; }
   .ba-section-contacts button {
-    font-family: Fira Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

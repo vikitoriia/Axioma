@@ -7,7 +7,6 @@
 	}
 
 	&__links{
-		font-family: Fira Sans;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 14px;
@@ -32,7 +31,6 @@
 
 	&__title{
 		line-height: 1.25;
-		color: #222222;
 		margin-top: 2px;
 
 		@media screen and (min-width:640px){
@@ -41,12 +39,10 @@
 	}
 
 	&__subtitle{
-		font-family: Fira Sans;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 18px;
 		line-height: 1.6;
-		color: #222222;
 		opacity: 0.7;
 		width: 349px;
 		margin: 0;
@@ -72,7 +68,6 @@
 		}
 
 		&-title{
-			font-family: Fira Sans;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 14px;
@@ -152,21 +147,17 @@
 		
 
 		&-title{
-			font-family: Fira Sans;
 			font-style: normal;
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 1.6;
-			color: #222222;
 		}
 
 		&-subtitle{
-			font-family: Fira Sans;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 14px;
 			line-height: 2;
-			color: #222222;
 			margin: 0;
 			margin-top: 31px;
 		}
@@ -193,7 +184,6 @@
 		}
 
 		&-title{
-			font-family: Fira Sans;
 			font-style: normal;
 			font-weight: 500;
 			font-size: 40px;

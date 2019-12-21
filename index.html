@@ -61,8 +61,7 @@
 		</div>
 		<!-- /.ba-container -->
 	</header>
-
-	<main>
+	<main class="content">
 		<section class="ba-section-intro" id="about">
 			<div class="ba-container">
 				<div class="ba-row">
@@ -72,7 +71,8 @@
 						</h2>
 						<div>
 							<p class="ba-section-intro__subtitle">
-								Клиент - это душа наших проектов. <br> Наша главная цель - проиллюстрировать свои ценности и
+								Клиент - это душа наших проектов. <br> Наша главная цель - проиллюстрировать свои
+								ценности и
 								индивидуальность
 								через дизайн.
 							</p>
@@ -107,7 +107,41 @@
 					<!-- /.ba-col-large-6 -->
 				</div>
 				<div class="ba-section-intro__video">
-					<video controls poster="img/video-img.png">
+					<button class="ba-section-intro__video-play">
+						<svg width="46" height="52" viewBox="0 0 46 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g filter="url(#filter0_d)">
+								<path d="M42 22L4.5 43.65V.35L42 22z" fill="#4737FF" />
+							</g>
+							<defs>
+								<filter id="filter0_d" x=".5" y=".349" width="45.5" height="51.301" filterUnits="userSpaceOnUse"
+									color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+									<feOffset dy="4" />
+									<feGaussianBlur stdDeviation="2" />
+									<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+									<feBlend in2="BackgroundImageFix" result="effect1_dropShadow" />
+									<feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+								</filter>
+							</defs>
+						</svg>
+					</button>
+					<button class="ba-section-intro__video-pause">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 47.607 47.607"
+							style="enable-background:new 0 0 47.607 47.607;" xml:space="preserve">
+							<g>
+								<path d="M17.991,40.976c0,3.662-2.969,6.631-6.631,6.631l0,0c-3.662,0-6.631-2.969-6.631-6.631V6.631C4.729,2.969,7.698,0,11.36,0
+		l0,0c3.662,0,6.631,2.969,6.631,6.631V40.976z" />
+								<path d="M42.877,40.976c0,3.662-2.969,6.631-6.631,6.631l0,0c-3.662,0-6.631-2.969-6.631-6.631V6.631
+		C29.616,2.969,32.585,0,36.246,0l0,0c3.662,0,6.631,2.969,6.631,6.631V40.976z" />
+							</g>
+
+						</svg>
+
+					</button>
+
+					<video poster="img/video-img.png">
 						<source src="img/intro-video.mp4">
 					</video>
 				</div>
@@ -211,12 +245,14 @@
 						<div class="ba-col-large-4 ba-col-small-12">
 							<div class="ba-section-services__offer ba-section-services__offer-first">
 								<h3 class="ba-section-services__offer-title ">
-									Дизайн жилых интерьеров 
+									Дизайн жилых интерьеров
 								</h3>
 								<p class="ba-section-services__offer-subtitle">
-									Грамотно созданный дизайн интерьера способен качественно обыграть любое помещение, сделать
+									Грамотно созданный дизайн интерьера способен качественно обыграть любое помещение,
+									сделать
 									его
-									функционально продуманным и облегчить работу при ремонте. Более того, хороший дизайн не
+									функционально продуманным и облегчить работу при ремонте. Более того, хороший дизайн
+									не
 									только
 									преображает общее пространство, но он качественно улучшает саму жизнь.
 								</p>
@@ -235,8 +271,10 @@
 								<p class="ba-section-services__offer-subtitle">
 									Дизайн - это важная составляющая в имидже любой компании. От него зависит комфорт
 									посетителей,
-									сотрудников, а также устойчивость ее бренда на рынке. Мы грамотно подберем все составляющие
-									интерьера и сделаем его по настоящему комфортным, функциональным и конкурентоспособным.
+									сотрудников, а также устойчивость ее бренда на рынке. Мы грамотно подберем все
+									составляющие
+									интерьера и сделаем его по настоящему комфортным, функциональным и
+									конкурентоспособным.
 								</p>
 								<span class="ba-section-services__offer-price">
 									от 400 грн/м2
@@ -248,11 +286,13 @@
 						<div class="ba-col-large-4 ba-col-small-12">
 							<div class="ba-section-services__offer ba-section-services__offer-first">
 								<h3 class="ba-section-services__offer-title">
-									Архитектурный проект 
+									Архитектурный проект
 								</h3>
 								<p class="ba-section-services__offer-subtitle">
-									Индивидуальное проектирование домов и коттеджей - это замечательная возможность выразить свою
-									индивидуальность в нестандартной архитектурной форме, исходя из потребностей и пожеланий
+									Индивидуальное проектирование домов и коттеджей - это замечательная возможность
+									выразить свою
+									индивидуальность в нестандартной архитектурной форме, исходя из потребностей и
+									пожеланий
 									вашей
 									семьи.
 								</p>
@@ -287,8 +327,10 @@
 									3D-визуализация
 								</h3>
 								<p class="ba-section-services__offer-subtitle">
-									3D - визуализация позволяет увидеть замысел дизайнера максимально приближенно к реальности.
-									Визуализация незаменима для отработки идеи дизайна, если нужно четко видеть пространство,
+									3D - визуализация позволяет увидеть замысел дизайнера максимально приближенно к
+									реальности.
+									Визуализация незаменима для отработки идеи дизайна, если нужно четко видеть
+									пространство,
 									пропорции, конкретные выбранные материалы, мебель, светильники «внутри помещения».
 								</p>
 								<span class="ba-section-services__offer-price">
@@ -304,7 +346,8 @@
 									Декорирование
 								</h3>
 								<p class="ba-section-services__offer-subtitle">
-									Декорирование позволяет вдохнуть жизнь в интерьер, создать уютную и приятную атмосферу и
+									Декорирование позволяет вдохнуть жизнь в интерьер, создать уютную и приятную
+									атмосферу и
 									расставляя
 									правильные акценты в интерьере преподнести пространство с лучшей стороны.
 								</p>
@@ -363,7 +406,8 @@
 							<span class="ba-section-stage__gallery--post-number">1</span>
 							<span class="ba-section-stage__gallery--post-description">замер помещения</span>
 							<span class="ba-section-stage__gallery--post-subtitle">
-								Бесплатный выезд на замер помещения. Выявление предпочтений, фотофиксация объекта, обмерочный
+								Бесплатный выезд на замер помещения. Выявление предпочтений, фотофиксация объекта,
+								обмерочный
 								план.
 							</span>
 						</div>
@@ -385,7 +429,8 @@
 							<span class="ba-section-stage__gallery--post-number">3</span>
 							<span class="ba-section-stage__gallery--post-description">эскизный проект</span>
 							<span class="ba-section-stage__gallery--post-subtitle">
-								Все развертки по стенам с указанием размеров, цветовой схемы, а также функциональным наполнением
+								Все развертки по стенам с указанием размеров, цветовой схемы, а также функциональным
+								наполнением
 								помещения. Планы инженерных сетей.
 							</span>
 						</div>
@@ -396,7 +441,8 @@
 							<span class="ba-section-stage__gallery--post-number">4</span>
 							<span class="ba-section-stage__gallery--post-description">подбор материалов</span>
 							<span class="ba-section-stage__gallery--post-subtitle">
-								Принципиальный подбор материалов, мебели, оборудования, освещения на основе технического задания
+								Принципиальный подбор материалов, мебели, оборудования, освещения на основе
+								технического задания
 								и оговариваемого бюджета.
 							</span>
 						</div>
@@ -417,7 +463,8 @@
 							<span class="ba-section-stage__gallery--post-number">6</span>
 							<span class="ba-section-stage__gallery--post-description">3D-визуализация</span>
 							<span class="ba-section-stage__gallery--post-subtitle">
-								Фотореалистичная 3D-визуализация, наглядно демонстрирующая внешний вид будующего помещения по
+								Фотореалистичная 3D-визуализация, наглядно демонстрирующая внешний вид будующего
+								помещения по
 								разработанному дизайн-проекту.
 							</span>
 						</div>
@@ -502,11 +549,13 @@
 						</div>
 						<div class="ba-footer__contacts-method">
 							<span class="ba-footer__contacts-title">приезжайте</span>
-							<p class="ba-footer__contacts-adress ba-footer__contacts-adress--first">Украина, г. Полтава</p>
+							<p class="ba-footer__contacts-adress ba-footer__contacts-adress--first">Украина, г.
+								Полтава</p>
 							<p class="ba-footer__contacts-adress ">ул. Европейская 48/57</p>
 						</div>
 						<div class="ba-footer__contacts-method">
-							<span class="ba-footer__contacts-title ba-footer__contacts-title--last">следите за нами</span>
+							<span class="ba-footer__contacts-title ba-footer__contacts-title--last">следите за
+								нами</span>
 							<div class="ba-footer__contacts-socials">
 								<a href="" class="ba-footer__contacts-socials--icon">
 									<img src="img/footer-twitter.svg" alt="twitter">
@@ -532,10 +581,10 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<script src="js/main.js"></script>
 	<script src="js/footer.js"></script>
 	<script src="js/menu.js"></script>
 	<script src="js/accordion.js"></script>
+	<script src="js/video.js"></script>
 </body>
 
 </html>
