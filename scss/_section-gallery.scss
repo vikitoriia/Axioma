@@ -76,12 +76,20 @@
 			}
 
 			&--up{
-				transform: rotate(-90deg) translateX(-4px) translateY(-9px);
+				transform: rotate(-90deg) translateX(-4px) translateY(3px);
+
+				@media screen and (min-width:640px){
+					transform: rotate(-90deg) translateX(-4px) translateY(-9px);		
+				}
 			}
 
 			&--next{
-				transform: translateX(-27px);
+				transform: translateX(-3px);
 				text-align: right;
+
+				@media screen and (min-width:640px){
+					transform: translateX(-27px);	
+				}
 			}
 
 			@media screen and (min-width:640px){

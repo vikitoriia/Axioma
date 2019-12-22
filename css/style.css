@@ -2000,14 +2000,24 @@ canvas {
         .ba-section-gallery__button-scroll:hover svg path {
           stroke: rgba(34, 34, 34, 0.5); }
       .ba-section-gallery__button-scroll--up {
-        -webkit-transform: rotate(-90deg) translateX(-4px) translateY(-9px);
-        -ms-transform: rotate(-90deg) translateX(-4px) translateY(-9px);
-        transform: rotate(-90deg) translateX(-4px) translateY(-9px); }
+        -webkit-transform: rotate(-90deg) translateX(-4px) translateY(3px);
+        -ms-transform: rotate(-90deg) translateX(-4px) translateY(3px);
+        transform: rotate(-90deg) translateX(-4px) translateY(3px); }
+        @media screen and (min-width: 640px) {
+          .ba-section-gallery__button-scroll--up {
+            -webkit-transform: rotate(-90deg) translateX(-4px) translateY(-9px);
+            -ms-transform: rotate(-90deg) translateX(-4px) translateY(-9px);
+            transform: rotate(-90deg) translateX(-4px) translateY(-9px); } }
       .ba-section-gallery__button-scroll--next {
-        -webkit-transform: translateX(-27px);
-        -ms-transform: translateX(-27px);
-        transform: translateX(-27px);
+        -webkit-transform: translateX(-3px);
+        -ms-transform: translateX(-3px);
+        transform: translateX(-3px);
         text-align: right; }
+        @media screen and (min-width: 640px) {
+          .ba-section-gallery__button-scroll--next {
+            -webkit-transform: translateX(-27px);
+            -ms-transform: translateX(-27px);
+            transform: translateX(-27px); } }
       @media screen and (min-width: 640px) {
         .ba-section-gallery__button-scroll {
           font-style: normal;
