@@ -868,7 +868,7 @@ a {
               transform: translateX(0) rotate(-90deg); } }
   .ba-header .nav__content {
     position: absolute;
-    left: 20px;
+    right: 230px;
     top: 35px;
     width: 100%; }
     @media screen and (min-width: 640px) {
@@ -886,11 +886,16 @@ a {
         -o-transition: 0s linear 0.25s;
         transition: 0s linear 0.25s; } }
     .ba-header .nav__content.is-active {
+      left: 20px;
       visibility: visible;
       opacity: 1;
       -webkit-transition: 0s linear;
       -o-transition: 0s linear;
-      transition: 0s linear; }
+      transition: 0s linear;
+      display: block; }
+      @media screen and (min-width: 640px) {
+        .ba-header .nav__content.is-active {
+          left: 61%; } }
       .ba-header .nav__content.is-active .nav__item a {
         opacity: 1;
         -webkit-transform: translateY(0);

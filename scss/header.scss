@@ -262,10 +262,9 @@
   
   .nav__content {
 		position: absolute;
-		left: 20px;
+		right: 230px;
 		top: 35px;
 		width: 100%;
-
 
 		@media screen and (min-width:640px){
 			left: 61%;
@@ -279,10 +278,16 @@
 		}
 		
 		&.is-active {
+			left: 20px;
 			visibility: visible;
 			opacity: 1;
 			transition: 0s linear;
-						
+			display: block;
+			
+			@media screen and (min-width:640px){
+				left: 61%;	
+			}
+			
 			.nav__item {
 				a {
 					opacity: 1;
