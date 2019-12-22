@@ -1755,9 +1755,9 @@ a {
         .ba-footer__contacts-socials {
           margin-top: 0;
           position: relative;
-          -webkit-transform: translateY(-70px) translateX(-225px);
-          -ms-transform: translateY(-70px) translateX(-225px);
-          transform: translateY(-70px) translateX(-225px); } }
+          -webkit-transform: translateY(-70px) translateX(-265px);
+          -ms-transform: translateY(-70px) translateX(-265px);
+          transform: translateY(-70px) translateX(-265px); } }
       .ba-footer__contacts-socials--icon {
         margin-right: 18px; }
         .ba-footer__contacts-socials--icon:hover {
