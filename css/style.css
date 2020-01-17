@@ -1523,12 +1523,22 @@ a {
         -ms-transform: translateY(-20px);
         transform: translateY(-20px); }
       .ba-section-stage__gallery--post-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         position: absolute;
         top: 0;
         right: 0;
         left: 0;
         bottom: 0;
-        padding: 110px 20px;
+        padding: 0px 20px;
         background-color: rgba(34, 34, 34, 0.7); }
       .ba-section-stage__gallery--post-number {
         font-style: normal;
